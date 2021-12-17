@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-opencensus" %}
-{% set version = "0.26b1" %}
+{% set version = "0.27b0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry-exporter-opencensus-{{ version }}.tar.gz
-  sha256: a254ae476622fe1aa8d93ee5225d9e9eb52e0d4488dedfe605a8933dab8a8bd2
+  sha256: f6f527c2c45fc1eedb0ac8f35cce71bb8901f1f86892ec080c2b8ad7d1d945db
 
 build:
   number: 0
