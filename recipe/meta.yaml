@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-opencensus" %}
-{% set version = "0.52b1" %}
+{% set version = "0.56b0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_exporter_opencensus-{{ version }}.tar.gz
-  sha256: be57907cdabb4c27db9b85c9c5a7e6e7a6ee9c54183834886775ab3682f0eb6c
+  sha256: 7e3bc957b99596c13e660c0b7b19f27eee26d246bef7930cee404324dcde4e7e
 
 build:
   noarch: python
@@ -22,11 +22,11 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - grpcio >=1.66.2,<2.0.0
-    - opencensus-proto >=0.1.0,<1.0.0
-    - opentelemetry-api >=1.31.1
+    - grpcio <2.0.0,>=1.66.2
+    - opencensus-proto <1.0.0,>=0.1.0
+    - opentelemetry-api >=1.35.0
     - opentelemetry-sdk >=1.15
-    - protobuf >=3.13
+    - protobuf ~=3.13
     - setuptools >=16.0
 
 test:
